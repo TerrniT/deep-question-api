@@ -1,5 +1,7 @@
 import { Elysia } from 'elysia'
+import { html } from '@elysiajs/html'
 import { swagger } from '@elysiajs/swagger'
+
 import { questionController } from './controllers/question.controller'
 
 import Logger from './logger'
@@ -11,6 +13,7 @@ logger.log('Checking health...')
 
 const app = new Elysia()
   .decorate('logger', logger)
+  .use(html())
   .use(
     swagger({
       documentation: {

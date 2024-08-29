@@ -6,6 +6,6 @@ export class QuestionService {
   }
 
   getQuestions = (db: DeepQuestionDatabase) => {
- 		return db.getQuestions()
+ 	return db.getQuestions()
   }
 }
