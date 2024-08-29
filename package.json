@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun --hot run  src/mod.ts",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+	"start": "bun run src/mod.ts"
   },
   "dependencies": {
     "@elysiajs/html": "^1.1.0",
