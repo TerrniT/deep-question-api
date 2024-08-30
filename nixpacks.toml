@@ -1,6 +1,6 @@
 [phases.setup]
-# uses bun 1.0.18
-nixpkgsArchive = '9c69bc8cae2f3b38536a50801961e2e62da13595'
+    nixLibs = ['...', 'openssl']
+    nixpkgsArchive = 'd05592ea7e9656648093dfe0e817819486bd5054'
 
 [start]
 cmd = "bun run start"
