@@ -29,6 +29,7 @@ export const questionController = new Elysia()
 					justify-content: center;
 					height: 100vh;
 					background-color: black;
+                                        text-align: center;
 					color: white;
 				}
 				.reload {
