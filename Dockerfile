@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # Expose the port the app runs on
 EXPOSE 3000
