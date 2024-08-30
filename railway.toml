@@ -4,5 +4,3 @@ buildCommand = "bun install"
 
 [deploy]
 startCommand = "bun run src/mod.ts"
-healthcheckPath = "/health"
-healthcheckTimeout = 300
