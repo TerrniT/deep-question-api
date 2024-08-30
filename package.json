@@ -5,7 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun --hot run  src/mod.ts",
     "lint": "eslint . --ext .ts",
-	"start": "bun run src/mod.ts"
+    "start": "bun run src/mod.ts"
   },
   "dependencies": {
     "@elysiajs/html": "^1.1.0",
@@ -24,5 +24,5 @@
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.3.0"
   },
-  "module": "src/index.js"
+  "module": "src/mod.ts"
 }
