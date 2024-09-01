@@ -19,7 +19,7 @@ const app = new Elysia()
       documentation: {
         tags: [
           { name: 'App', description: 'General endpoints' }
-			  ]
+        ]
       }
     })
   )

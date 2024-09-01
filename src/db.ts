@@ -1,30 +1,20 @@
+import { type DatabaseClient, databaseClient } from './client'
 import Logger from './logger'
-import { createClient } from '@libsql/client'
 
 const logger = new Logger()
-
-if(!process.env.DB_URL || !process.env.DB_TOKEN) {
-  logger.log('DB_URL and DB_TOKEN must be set')
-}
 
 export interface DeepQuestion {
     id?: number;
     body: string;
 }
 
-export const db = createClient({
-  url: process.env.DB_URL!,
-  authToken: process.env.DB_TOKEN
-})
-
-export type Database = typeof db
 export class DeepQuestionDatabase {
-  private db: Database
+  private db: DatabaseClient
 
   constructor() {
-    this.db = db
+    this.db = databaseClient
+
     logger.log('Connecting to database')
-    // Initialize the database
     this.init()
       .then(() => logger.log('Database initialized'))
       .catch(console.error)

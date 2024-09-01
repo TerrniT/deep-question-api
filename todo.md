@@ -1,2 +1,0 @@
-- [ ] eslint + ts setup
-- [ ] html jsx + tailwind
