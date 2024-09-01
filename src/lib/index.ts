@@ -11,11 +11,24 @@ export function returnQuestionHtml(questionTitle: string) {
 			<link rel='shortcut icon' type='image/x-icon' href='/public/favicon.ico' />
 			<link rel="icon" type="image/png" href="/public/favicon.png" />
 			<meta name="author" content="Gleb Kotovsky">
+			<title>Deep Question Generator</title>
+			<meta name="description" content="Deep Question Generator">
 
+			<!-- Facebook Meta Tags -->
+			<meta property="og:url" content="https://athletic-adventure-production.up.railway.app/question">
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="Deep Question Generator">
-			<meta property="og:image" content="/public/open-graph.png">
-			<title>Deep Question Generator</title>
+			<meta property="og:description" content="Deep Question Generator">
+			<meta property="og:image" content="https://athletic-adventure-production.up.railway.app/public/open-graph.png">
+
+			<!-- Twitter Meta Tags -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta property="twitter:domain" content="athletic-adventure-production.up.railway.app">
+			<meta property="twitter:url" content="https://athletic-adventure-production.up.railway.app/question">
+			<meta name="twitter:title" content="Deep Question Generator">
+			<meta name="twitter:description" content="Deep Question Generator">
+			<meta name="twitter:image" content="https://athletic-adventure-production.up.railway.app/public/open-graph.png">
+
 		</head>
 		<style>
 			body {
