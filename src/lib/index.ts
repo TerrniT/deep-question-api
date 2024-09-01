@@ -11,6 +11,10 @@ export function returnQuestionHtml(questionTitle: string) {
 			<link rel='shortcut icon' type='image/x-icon' href='/public/favicon.ico' />
 			<link rel="icon" type="image/png" href="/public/favicon.png" />
 			<meta name="author" content="Gleb Kotovsky">
+
+			<meta property="og:type" content="website">
+			<meta property="og:title" content="Deep Question Generator">
+			<meta property="og:image" content="/public/open-graph.png">
 			<title>Deep Question Generator</title>
 		</head>
 		<style>
