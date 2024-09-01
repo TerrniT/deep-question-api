@@ -8,8 +8,8 @@ export function returnQuestionHtml(questionTitle: string) {
 			<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 			<meta name="description" content="Deep Question Generator" />
 			<meta name="theme-color" content="#171717" />
-			<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-			<link rel="icon" type="image/png" href="/favicon.png" />
+			<link rel='shortcut icon' type='image/x-icon' href='/public/favicon.ico' />
+			<link rel="icon" type="image/png" href="/public/favicon.png" />
 			<meta name="author" content="Gleb Kotovsky">
 			<title>Deep Question Generator</title>
 		</head>
