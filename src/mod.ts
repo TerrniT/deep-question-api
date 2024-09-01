@@ -1,5 +1,6 @@
 import { Elysia, redirect } from 'elysia'
 import { html } from '@elysiajs/html'
+import { staticPlugin } from '@elysiajs/static'
 import { swagger } from '@elysiajs/swagger'
 
 import { questionController } from './controllers/question.controller'
@@ -14,6 +15,7 @@ logger.log('Checking health...')
 const app = new Elysia()
   .decorate('logger', logger)
   .use(html())
+  .use(staticPlugin())
   .use(
     swagger({
       documentation: {
