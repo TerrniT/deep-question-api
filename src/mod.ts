@@ -1,4 +1,4 @@
-import { Elysia } from 'elysia'
+import { Elysia, redirect } from 'elysia'
 import { html } from '@elysiajs/html'
 import { swagger } from '@elysiajs/swagger'
 
@@ -23,6 +23,7 @@ const app = new Elysia()
       }
     })
   )
+  .get('/', () => redirect('/question'))
   .use(questionController)
   .listen(port)
 
